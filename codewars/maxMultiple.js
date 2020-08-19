@@ -18,20 +18,18 @@
 const maxMultiple = (divisor, bound) => {
     let output = 0
     for (let i = 1; i <= bound; i++) {
-        // console.log(i)
-        if (i % divisor === 0) {
+        if (divisor % i === 0) {
             
-            console.log(i)
-            // return
+           console.log(i)
        
         }
    
     
     }
 
-    console.log(output)
+
 
     return output
 }
 
-console.log(maxMultiple(2, 7))
+console.log(maxMultiple(3, `0`))
