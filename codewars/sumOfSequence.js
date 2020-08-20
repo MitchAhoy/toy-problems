@@ -15,11 +15,11 @@ const sequenceSum = (begin, end, step) => {
     if (begin > end) return 0
 
     let output = 0
-    for (let i = begin; i <= 6; i++) {
-        console.log(output)
+    for (let i = begin; i <= end; i += step) {
+        
         output += i
+         
     }
-
     return output
 }
 
