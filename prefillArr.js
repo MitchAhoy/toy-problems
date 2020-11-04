@@ -22,7 +22,7 @@
 // prefill("xyz", 1)
 //   --> throws TypeError with message "xyz is invalid"
 
-const prefill = (n, v=undefined) => {
+const prefill = (n=0, v=undefined) => {
     if (!Number.isInteger(Number(n))) return TypeError(`${n} is invalid`)
     if (n === 0) return []
     const output = new Array(parseInt(n))
