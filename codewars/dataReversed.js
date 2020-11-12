@@ -21,7 +21,6 @@ const dataReverse = (data) => {
   }
 
   return splitBytes.reverse().reduce((acc, val) => acc.concat(val), [])
-
 }
 
 dataReverse([1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 1, 0, 1, 0, 1, 0])
